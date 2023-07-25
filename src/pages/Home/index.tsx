@@ -84,7 +84,7 @@ export function Home() {
 
   useEffect(() => {
     if (activeCycle) {
-      document.title = `${minutes}:${seconds}`
+      document.title = `Timer | ${minutes}:${seconds}`
     }
   }, [minutes, seconds, activeCycle])
 
