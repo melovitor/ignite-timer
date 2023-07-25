@@ -28,7 +28,7 @@ export const FormContainer = styled.div`
 `
 
 export const CountDownContainer = styled.div`
-  font-family: 'Roboto-Mono', monospace;
+  font-family: 'Roboto-mono', monospace;
   font-size: 10rem;
   line-height: 8rem;
   color: ${(props) => props.theme['gray-100']};
