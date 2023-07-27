@@ -10,6 +10,10 @@ export const HistoryContainer = styled.main`
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `
 
 export const HistoryList = styled.div`
@@ -104,5 +108,9 @@ export const ClearButton = styled.button`
   }
   &:not(:disabled):hover {
     background: ${(props) => props.theme['green-700']};
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `

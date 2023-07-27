@@ -4,6 +4,7 @@ import { CyclesContext } from '../../contexts/CycleContext'
 import ptBR from 'date-fns/locale/pt-BR'
 import { formatDistanceToNow } from 'date-fns'
 import { ClearContainer } from '../Home/styles'
+import { TrashSimple } from 'phosphor-react'
 
 export function History() {
   const { cycles } = useContext(CyclesContext)
@@ -57,6 +58,7 @@ export function History() {
       </HistoryList>
       <ClearContainer>
         <ClearButton onClick={handleClearStorage} disabled={cycles.length < 1}>
+          <TrashSimple size={20} />
           Limpar histórico
         </ClearButton>
       </ClearContainer>
