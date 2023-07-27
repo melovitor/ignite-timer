@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     @media (max-width: 768px) {
         body {
-            margin: 1rem;
+            margin: 1rem
         }
     }
 
