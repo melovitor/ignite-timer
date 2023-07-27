@@ -5,6 +5,7 @@ export const HistoryContainer = styled.main`
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
+  overflow: auto;
   h1 {
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
@@ -82,6 +83,7 @@ export const Status = styled.span<StatusProps>`
 `
 
 export const ClearButton = styled.button`
+  margin-top: 1rem;
   width: 25%;
   border: 0;
   padding: 1rem;
