@@ -15,6 +15,12 @@ export const HomeContainer = styled.main`
   }
 `
 
+export const ClearContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+`
+
 export const BaseCountdownButton = styled.button`
   width: 100%;
   border: 0;

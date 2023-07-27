@@ -1,8 +1,9 @@
 import { useContext } from 'react'
-import { HistoryContainer, HistoryList, Status } from './styles'
+import { ClearButton, HistoryContainer, HistoryList, Status } from './styles'
 import { CyclesContext } from '../../contexts/CycleContext'
 import ptBR from 'date-fns/locale/pt-BR'
 import { formatDistanceToNow } from 'date-fns'
+import { ClearContainer } from '../Home/styles'
 
 export function History() {
   const { cycles } = useContext(CyclesContext)
@@ -51,6 +52,9 @@ export function History() {
           </tbody>
         </table>
       </HistoryList>
+      <ClearContainer>
+        <ClearButton disabled={cycles.length < 1}>Limpar histórico</ClearButton>
+      </ClearContainer>
     </HistoryContainer>
   )
 }
