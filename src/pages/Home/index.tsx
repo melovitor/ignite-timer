@@ -35,13 +35,18 @@ export function Home() {
     },
   })
 
-  const { handleSubmit, watch /* reset */ } = newCycleForm
+  const { handleSubmit, watch, reset } = newCycleForm
+
+  function hadleCreateNewCycle(data: NewCycleFromData) {
+    crateNewCicle(data)
+    reset()
+  }
 
   const task = watch('task')
 
   return (
     <HomeContainer>
-      <form onSubmit={handleSubmit(crateNewCicle)} action="">
+      <form onSubmit={handleSubmit(hadleCreateNewCycle)} action="">
         <FormProvider {...newCycleForm}>
           <NewCycleForm />
         </FormProvider>
