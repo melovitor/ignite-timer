@@ -21,11 +21,7 @@ export function NewCycleForm() {
         disabled={!!activeCycle}
       />
 
-      <datalist id="task-suggestions">
-        <option value="1" />
-        <option value="2" />
-        <option value="3" />
-      </datalist>
+      <datalist id="task-suggestions"></datalist>
 
       <label htmlFor="minutesAmount">durante</label>
       <MinutesAmountInput

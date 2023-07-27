@@ -8,7 +8,10 @@ import { ClearContainer } from '../Home/styles'
 export function History() {
   const { cycles } = useContext(CyclesContext)
 
-  console.log(cycles)
+  function handleClearStorage() {
+    localStorage.setItem('@ignite-timer:cycles-state-1.0.0', '')
+    window.location.reload()
+  }
 
   return (
     <HistoryContainer>
@@ -53,7 +56,9 @@ export function History() {
         </table>
       </HistoryList>
       <ClearContainer>
-        <ClearButton disabled={cycles.length < 1}>Limpar histórico</ClearButton>
+        <ClearButton onClick={handleClearStorage} disabled={cycles.length < 1}>
+          Limpar histórico
+        </ClearButton>
       </ClearContainer>
     </HistoryContainer>
   )
