@@ -86,6 +86,17 @@ export const Status = styled.span<StatusProps>`
   }
 `
 
+export const ClearContainer = styled.div`
+  width: 100%;
+
+  a {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+  }
+`
+
 export const ClearButton = styled.button`
   margin-top: 1rem;
   width: 25%;
